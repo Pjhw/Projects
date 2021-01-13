@@ -71,7 +71,7 @@ html {
 }
 
 #block{
-	display: block;
+	display: flex;
 	min-height: 250px;
 	background-color: white;
 	overflow: auto;
@@ -86,14 +86,25 @@ html {
 }
 
 #block img{
-	width: 50%;
-	border-radius: 100px;
-	margin-left: 20%;
+	max-width: 60%;
+	border-radius: 100px; 
+	vertical-align: middle;
+	height: auto;
 }
 
+.imghelper{
+	display: inline-block;
+	height:100%;
+	vertical-align: middle;
+}
+
+
+
+
+
+
 #left{
-	/*background-color: black;*/
-	float: left;
+	display: inline-block;
 	width: 50%;
 	min-height: inherit;
 }
@@ -105,10 +116,10 @@ html {
 
 
 #right{
-	/*background-color: lightgray;*/
-	float: right;
+	display: inline-block;
 	width: 50%;
 	min-height: inherit;
+	text-align: center;
 }
 
 
